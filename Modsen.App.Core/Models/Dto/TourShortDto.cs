@@ -15,7 +15,7 @@ namespace Modsen.App.Core.Models.Dto
 
         public string Description { get; set; }
 
-        public int Price { get; set; }
+        public decimal Price { get; set; }
 
         //public TourType TourType { get; set; }
 

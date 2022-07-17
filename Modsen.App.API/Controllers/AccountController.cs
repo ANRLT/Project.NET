@@ -7,5 +7,6 @@ namespace Modsen.App.API.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        //а что сюда ?
     }
 }

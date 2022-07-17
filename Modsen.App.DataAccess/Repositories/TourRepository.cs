@@ -37,7 +37,7 @@ namespace Modsen.App.DataAccess.Repositories
         }
         public async Task AddAsync(Tour tour)
         {
-            
+
             await _dbSet.AddAsync(tour);
             await _context.SaveChangesAsync();
 
@@ -56,7 +56,7 @@ namespace Modsen.App.DataAccess.Repositories
 
         public async Task UpdateAsync(Tour tour)
         {
-            var toUpdateTourIsNotNull = await _dbSet.AsNoTracking().FirstOrDefaultAsync(x=>x.Id == tour.Id) != null;
+            var toUpdateTourIsNotNull = await _dbSet.AsNoTracking().FirstOrDefaultAsync(x => x.Id == tour.Id) != null;
             if (toUpdateTourIsNotNull)
             {
                 _dbSet.Update(tour);
